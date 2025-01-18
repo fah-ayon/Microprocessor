@@ -123,4 +123,4 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 ## Acknowledgments
 
 - **BRAC University, Department of Computer Science and Engineering**
-- Special thanks to the course instructor and teaching assistants for their guidance and support.
+- Special thanks to the course instructor and teaching assistants for their guidance and group mates for their support.
