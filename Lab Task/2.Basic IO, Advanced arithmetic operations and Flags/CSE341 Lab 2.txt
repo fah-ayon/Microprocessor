@@ -1,0 +1,3 @@
+;AH = 1; single character input , It will be saved in AL.
+;AH = 2; single character output , The item to be printed must be in DL
+;AH = 9; string output

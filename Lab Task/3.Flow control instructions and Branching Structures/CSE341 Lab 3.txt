@@ -1,0 +1,10 @@
+;JMP unconditional jump
+
+;Conditional Jump
+;JE = Jump Equal
+;JL = Jump Less
+;JG = Jump Greater
+;JGE = Jump Greater or Equal
+;JLE = Jump Less or Equal
+
+;CMP = Compare between two reg

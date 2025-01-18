@@ -1,0 +1,56 @@
+.MODEL SMALL
+ 
+.STACK 100H  ; Stack pointer SP is now pointing at 100H in the memory
+
+.DATA
+a db 1,2,3,4,5
+b db 5 dup(?)
+.CODE
+MAIN PROC
+
+;iniitialize DS
+
+MOV AX,@DATA
+MOV DS,AX
+ 
+; enter your code here
+; stack
+; PUSH always counts word
+
+; 3 types of push
+;   i) PUSH AX
+;   ii) PUSH var  - variable must be DW
+;   iii) PUSH 4h
+
+; POP -> must be 16 bits
+
+; lab_task
+MOV CX, 0
+hello:
+CMP AL, 0dH
+JE exit
+MOV AH, 1
+INT 21H
+INC CX
+PUSH AX
+JMP hello
+
+exit:
+MOV AH, 2
+MOV DL, 0aH
+INT 21H
+MOV DL, 0dH
+INT 21H
+asd:
+POP dx
+
+INT 21H
+LOOP asd 
+
+;exit to DOS
+               
+MOV AX,4C00H
+INT 21H
+
+MAIN ENDP
+    END MAIN

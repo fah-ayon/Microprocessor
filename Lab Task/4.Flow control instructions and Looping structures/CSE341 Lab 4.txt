@@ -1,0 +1,80 @@
+; two types of loop 
+;1. implicit
+;2. explicit  
+
+
+
+; example of implicit loop 
+;assemnler auto updates the iteration
+
+mov ah, 02h
+mov cx,5
+mov dl,30h
+print:
+    int 21h
+    inc dl
+    loop print  ; loop compare cx value, every time the loop execute cx dec by 1
+    
+
+
+
+
+
+
+
+                             
+; example of explicit loop  
+;need to manually update 
+;use for infinite loop
+
+mov dl, 30h     ; step 1 = initialization 
+
+print:
+    cmp dl, 35h  ; comparison
+    jge exit      ;will exit if greater or equal 
+    
+    mov ah, 02h
+    int 21h     ; printing the current state  (output:01234)
+    
+    inc dl       ;increment for the next value
+    
+    jmp print   ; back to print:
+
+
+exit:
+
+
+
+
+
+
+
+
+
+
+;    while True:
+;        x= input()
+;        if x==0:
+;            break
+;        print (x)
+
+; we will do this with explicit loop because of infinite loop 
+start:
+    mov ah, 1h
+    int 21h
+    
+    mov bl, al
+    
+    cmp bl, 30h
+    je exit
+    ;mov dl, bl
+    ;mov ah, 2
+    ;int 21h
+    jmp start
+
+
+exit:
+
+
+
+
