@@ -43,37 +43,49 @@ This project demonstrates the practical application of assembly language concept
 #### **Project Features**
 
 1. **User Login via Password Check**
-    ![Welcome to Grocery](images/welcome_interface.png)
-    ![User Login via Password Check](images/user_login.png)
+
+        ![Welcome to Grocery](images/welcome_interface.png)
+        ![User Login via Password Check](images/user_login.png)
+
    - Only authorized users can log in to purchase grocery items.
    - Password verification ensures secure access.
 
 2. **Adding User**
-    ![Adding User](images/adding_user.png)
+
+        ![Adding User](images/adding_user.png)
+
    - New users can sign up by creating an account.
 
 3. **Display Inventory Items**
-    ![Inventory Items](images/inventory_items.png)
+
+        ![Inventory Items](images/inventory_items.png)
+
    - A list of all available inventory items is displayed.
    - Users can view item details (e.g., name, price, quantity).
 
-4. **Order Items**
-    ![Order Items](images/order_items.png)
+5. **Order Items**
+
+        ![Order Items](images/order_items.png)
+
    - Users can select and add items to their cart.
    - The cart is dynamically updated with selected items.
 
-5. **Generate and Calculate Bill**
+6. **Generate and Calculate Bill**
    - Calculates the total price for all items in the cart.
    - Generates a final list of items and their prices.
 
-6. **Discard Items and Cancel Order**
-    ![Discard Items and Cancel Order](images/empty_cart.png)
+7. **Discard Items and Cancel Order**
+
+        ![Discard Items and Cancel Order](images/empty_cart.png)
+
    - Users can remove specific items from their cart.
    - Option to cancel the entire order.
 
-7. **Admin Panel**
-    ![Admin Panel](images/admin.png)
-    ![Add Product](images/product_adding.png)
+8. **Admin Panel**
+
+        ![Admin Panel](images/admin.png)
+        ![Add Product](images/product_adding.png)
+
    - Admins can add new products to the inventory.
    - Allows management of inventory items, including updating quantities and prices.
 
