@@ -1,8 +1,0 @@
-Grocery/Inventory Management System
-
-1. User login via password check - only the authorized users (password will be verified) can login for purchasing grocery items.
-2. Adding user - Sign up option for new users.
-3. Display inventory items - generate list of all available items in the inventory.
-4. Order - select and pick items for purchase and the selected items are added to the cart.
-5. Generation and calculation - price for all the ordered items are calculated and a final list of items are generated or displayed.
-6. Discard item and cancel order - user can discard any item(s) from the cart and can cancel the order as well.
